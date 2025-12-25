@@ -3,21 +3,27 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Talha.| Portfolio</title>
+<title>Talha| Portfolio</title>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <style>
 * { margin:0; padding:0; box-sizing:border-box; font-family:'Roboto', sans-serif; scroll-behavior:smooth; transition:all 0.3s ease;}
 body { line-height:1.6; background:#0a2958; color:#333;}
 a { text-decoration:none; color:inherit;}
-.dark-mode { background:#111; color:#f0f2f5;}
-.dark-mode nav { background:#222;}
-.dark-mode .btn { background:#00aaff; color:#fff;}
-.dark-mode .column, .dark-mode .card, .dark-mode .project-card .overlay { background:#222; color:#f0f2f5;}
+.dark-mode { background:#06155c; color:#f0f2f5;}
+.dark-mode nav { color:#a0500e;}
+.dark-mode .btn { background:#0e0d0d; color:#fff;}
+.dark-mode .column, .dark-mode .card, .dark-mode .project-card .overlay { background:#0e0d0d; color:#f0f2f5;}
 
 /* Navbar */
-nav { background:#0e0d0d; color:#fff; padding:1rem 2rem; display:flex; justify-content:space-between; align-items:center; position:sticky; top:0; z-index:100; box-shadow:0 2px 5px rgba(0,0,0,0.2);}
-nav .logo { font-size:1.7rem; font-weight:bold; background:linear-gradient(90deg,#00aaff,#00ffaa); -webkit-background-clip:text; -webkit-text-fill-color:transparent;}
+nav { background:#050505; color:#fff; padding:1rem 2rem; display:flex; justify-content:space-between; align-items:center; position:sticky; top:0; z-index:100; box-shadow:0 2px 5px rgba(0,0,0,0.2);}
+.navbar-brand img {
+  width: 100px; /* Or a specific pixel value */
+  height: auto; /* Maintains aspect ratio */
+  
+}
+
+nav .logo { font-size:1.7rem; font-weight:bold; background:linear-gradient(90deg,#00aaff,#b85e0a); -webkit-background-clip:text; -webkit-text-fill-color:transparent;}
 nav ul { display:flex; list-style:none;}
 nav ul li { margin-left:2rem; transition: transform 0.3s;}
 nav ul li:hover { transform:translateY(-3px);}
@@ -25,7 +31,7 @@ nav ul li a { color:#fff; padding:0.3rem 0; position:relative;}
 nav ul li a::after { content:""; position:absolute; width:0; height:2px; left:0; bottom:-2px; background:#00aaff; transition:width 0.3s;}
 nav ul li a:hover::after { width:100%;}
 .menu-toggle { display:none; font-size:1.8rem; cursor:pointer;}
-#theme-toggle { font-size:1.5rem; cursor:pointer; margin-left:1rem; color:#00aaff; }
+#theme-toggle {  display:on; font-size:1.5rem; cursor:pointer; margin-left:1rem; color:#e65d0e; }
 
 /* Sections */
 section { padding:80px 20px; max-width:1000px; margin:auto; opacity:0; transform:translateY(50px); transition:all 0.8s ease;}
@@ -35,32 +41,32 @@ p { margin-bottom:1rem;}
 ul.custom-list { list-style-type:square; margin-left:1.5rem;}
 
 /* Home Section */
-#home { text-align:center; padding:120px 20px; background:linear-gradient(135deg,#0a0a4b,#00ffaa); color:#fff;}
+#home { text-align:center; padding:120px 20px; background:linear-gradient(135deg,#0a2958,#0fa830); color:#fff;}
 #home h1 { font-size:3rem; margin-bottom:1rem; animation:fadeInDown 1s ease forwards;}
 #home p { font-size:1.2rem; margin-bottom:2rem; animation:fadeIn 1.5s ease forwards;}
-.btn { padding:0.8rem 1.5rem; margin:0.5rem; background:#fff; color:#080808; border:none; border-radius:5px; font-weight:bold; cursor:pointer; transition:0.3s;}
+.btn { padding:0.8rem 1.5rem; margin:0.5rem; background:#fff; color:#020202; border:none; border-radius:5px; font-weight:bold; cursor:pointer; transition:0.3s;}
 .btn:hover { background:#0a0a0a; color:#fff; transform:translateY(-3px); }
 
 /* Two-column Layout */
 .two-column { display:flex; flex-wrap:wrap; gap:2rem; margin-top:1rem;}
 .column { flex:1; min-width:280px; background:#fff; padding:20px; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.1); transition:transform 0.3s;}
-.column:hover { transform:translateY(-5px);color: #0a8b60; }
+.column:hover { transform:translateY(-5px);color: #c55810; }
 
 /* Cards for Projects & Achievements */
 .card { background:#fff; padding:20px; border-radius:10px; margin-bottom:1.5rem; box-shadow:0 4px 10px rgba(0,0,0,0.1); transition:transform 0.3s, box-shadow 0.3s;}
-.card:hover { transform:translateY(-5px); box-shadow:0 8px 20px rgba(0,0,0,0.15); }
+.card:hover { transform:translateY(-5px); box-shadow:0 8px 20px; color: #372699 }
 
 /* Social Icons */
 .social-icons { display:flex; justify-content:center; gap:1rem; margin-top:1rem;}
-.social-icons a { font-size:1.5rem; color:#080808; transition:transform 0.3s;}
+.social-icons a { font-size:1.5rem; color:#0a0a0a; transition:transform 0.3s;}
 .social-icons a:hover { transform:scale(1.2); }
 
 /* Skill Bars */
 .skill { margin-bottom:1rem; }
 .skill-name { font-weight:bold; margin-bottom:0.3rem;color: #fff ;}
 .skill-bar { width:100%; background:#ddd; border-radius:10px; overflow:hidden; height:20px;}
-.skill-progress { height:100%; width:0%; background:#0a8b60; border-radius:10px; transition: width 1s ease-in-out; }
-
+.skill-progress { height:100%; width:0%; background:#129c35; border-radius:10px; transition: width 1s ease-in-out; }
+.skill-bar:hover{  transform:translateY(-5px); box-shadow:0 8px 20px; color: #050505;}
 /* Project Cards with Hover Overlay */
 .projects-container { display:flex; flex-wrap:wrap; gap:1.5rem; justify-content:center;}
 .project-card { position:relative; width:100%; max-width:300px; overflow:hidden; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.1); transition:transform 0.3s;}
@@ -92,16 +98,17 @@ nav ul li { margin:1rem 0;}
 
 <!-- Navbar -->
 <nav>
-<div class="logo">Talha.</div>
-<div>
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-    <i id="theme-toggle" class="fas fa-moon" onclick="toggleTheme()"></i>
+<div class="logo">
+  <a class="navbar-brand" href="#"><img src="images/talha.jfif" alt="Logo"></a>
 </div>
+   <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <i id="theme-toggle" class="fas fa-moon" onclick="toggleTheme()"></i>
 <ul id="nav-links">
     <li><a href="#home">Home</a></li>
     <li><a href="#about">About</a></li>
      <li><a href="#education">Education</a></li>
-      <li><a href="#skills">Skills</a></li>
+    <li><a href="#skills">Skills</a></li>
     <li><a href="#interests">Interests</a></li>
     <li><a href="#experience">Experience</a></li>
     <li><a href="#achievements">Achievements</a></li>
@@ -117,10 +124,9 @@ nav ul li { margin:1rem 0;}
 <button class="btn" onclick="window.location. href='#projects'"class="btn" target="_blank">View Projects</button>
     <button class="btn" onclick="window.location. href='https://drive.google.com/file/d/1OKt6f_8w-m_wSlAZYyY2_tyvgrEnVDMy/view?usp=drivesdk' " class="btn" download>Download CV</button>
     <button class="btn" onclick="window.location.href='#contact'">Contact Me</button>
-    <div class="social-icons">
-<div class="social-icons">
-           <a href="https://github.com/Muhammad-Talha-khan007" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://linkedin.com/in/muhammad-talha-khan-56773431" target="_blank"><i class="fab fa-linkedin"></i></a>
+ <div class="social-icons">
+        <a href="https://github.com/Muhammad-Talha-khan007" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://https://www.linkedin.com/in/muhammad-talha-khan-56773431a/?trk=public-profile-join-page" target="_blank"><i class="fab fa-linkedin"></i></a>
         <a href="mailto:niaziibro@gmail.com"><i class="fas fa-envelope"></i></a>
 </div>
 </section>
@@ -145,12 +151,65 @@ nav ul li { margin:1rem 0;}
 </section>
 <section id="education">
         <h1>Education</h1>
-         <div class="grid">
-         <div class="card">Bachelor of Information technology</div>
+        
+<div class="projects-container">
+  <div class="project-card">
+    <img src="images/umw.jfif" alt="Bachelor of Information technology">
+    <div class="overlay">
+      <h3>Bachelor of Information technology</h3>
+      <h3>CGPA: 3.5/4 </h3>
+      <h3>Session: 2022-2026</h3>
     </div>
+  </div>
+  <div class="project-card">
+    <img src="images/superior college.png" alt="Bachelor of Information technology">
+    <div class="overlay">
+      <h3>FSc Pre-Engineering</h3>
+      <h3>Marks: 781/1100 </h3>
+      <h3>Session: 2019-2021</h3>
+    </div>
+  </div>
+   <div class="project-card">
+    <img src="images/school.jfif" alt="Bachelor of Information technology">
+    <div class="overlay">
+      <h3>Matric in Science group</h3>
+      <h3>Marks: 881/1100 </h3>
+      <h3>Session: 2017-2019</h3>
+    </div>
+  </div>
+  
+</div>
     
 </section>
+<section id="educations">
+     <h1>Courses</h1>
+            
+<div class="projects-container">
+  <div class="project-card">
+    <img src="images/shopify.png" alt="v">
+    <div class="overlay">
+       <h3>Institue: University Of Mianwali</h3>
+      <h3>E-commerce</h3>
+      <h3> </h3>
+      <h3>Duration: 2 month</h3>
+            <a href="" target="_blank" class="btn">View Online</a>
 
+    </div>
+  </div>
+  <div class="project-card">
+    <img src="images/ms office.png" alt="v">
+    <div class="overlay">
+      <h3>Institue: TEVTA College Mianwali</h3>
+      <h3>Ms Office </h3>
+      <h3> </h3>
+      <h3>Duration: 4 month</h3>
+            <a href="https://drive.google.com/file/d/1R1v7PzpbYNo35sdU0fo88XjPCWrZaZBX/view?usp=drive_link" target="_blank" class="btn">View Online</a>
+
+    </div>
+  </div>
+  
+</div>
+</section>
 <section id="skills">
     <h1>Skills</h1>
      <div class="skill">
@@ -253,44 +312,186 @@ nav ul li { margin:1rem 0;}
         <div class="card">Strong problem-solving practice</div>
     </div>
 </section>
-
+<section id="achievements">
+    <h1>Certification</h1>
+  <div class="projects-container">
+   <div class="project-card">
+    <img src="images/ispr.jpg" alt="ISPR">
+    <div class="overlay">
+      <h3></h3>
+      <a href="https://drive.google.com/file/d/1fk60y098MUOXeE1g2LKpfiyCt-xkCs0W/view?usp=drive_link" target="_blank" class="btn">View Online</a>
+    </div>
+       
+   </div>
+    <div class="project-card">
+    <img src="images/bds.jpg" alt="UMW BDS">
+    <div class="overlay">
+      <h3></h3>
+      <a href="https://drive.google.com/file/d/1nniDQh4hWOu6qEFA3ROYvl4UPxxVkes-/view?usp=drive_link" target="_blank" class="btn">View Online</a>
+    </div>
+       
+   </div>
+    <div class="project-card">
+    <img src="images/ORIC.jpg" alt="ORIC">
+    <div class="overlay">
+      <h3></h3>
+      <a href="https://drive.google.com/file/d/1S9xmNsuHfQLCYW11J1PQyv6KxsPk4w4G/view?usp=drive_link" target="_blank" class="btn">View Online</a>
+    </div>
+       
+   </div>
+   <div class="project-card">
+    <img src="images/volunter.jpg" alt="Volunter">
+    <div class="overlay">
+      <h3></h3>
+      <a href="https://drive.google.com/file/d/1dJW3qmoshc98v5yxUl_n71jpD0vrQg3Q/view?usp=drive_link" target="_blank" class="btn">View Online</a>
+    </div>
+       
+   </div>
+   <div class="project-card">
+    <img src="images/web design certificate .jpg" alt="MS Office">
+    <div class="overlay">
+      <h3></h3>
+      <a href="https://drive.google.com/file/d/1JEAv2ONu8pFqGia_EsJeuwXm7DIFrOxe/view?usp=drive_link" target="_blank" class="btn">View Online</a>
+    </div>
+       
+   </div>
+   <div class="project-card">
+    <img src="images/social media certificate .jpg" alt="MS Office">
+    <div class="overlay">
+      <h3></h3>
+      <a href="https://drive.google.com/file/d/1XbT92s0A5f-bz9goN6kePBmgh6FYGJvx/view?usp=drive_link" target="_blank" class="btn">View Online</a>
+    </div>   
+   </div>
+  </div>
+</section>
 <!-- Projects Section -->
 <section id="projects">
+
 <h2>Projects</h2>
 <div class="projects-container">
   <div class="project-card">
-    <img src="project1.png" alt="Credit Card Fraud System">
+    <img src="images/patient.jfif" alt="Patient-Appointment-system">
     <div class="overlay">
-      <h3>Credit Card Fraud Detection</h3>
-      <p>SQL database & visualization dashboard</p>
-      <a href="#" target="_blank" class="btn">GitHub</a>
+      <h3>Patient-Appointment-system</h3>
+      <p>A user-friendly patient appointment management system 
+        that streamlines scheduling, reduces wait times, and 
+        improves healthcare service efficiency.</p>
+      <a href="https://github.com/Muhammad-Talha-khan007/Patient-Appointment-system" target="_blank" class="btn">GitHub</a>
       <a href="#" target="_blank" class="btn">Live Demo</a>
     </div>
   </div>
   <div class="project-card">
-    <img src="project2.png" alt="Portfolio Website">
+    <img src="images/blockchain.jpg" alt="D-Block Ballot">
     <div class="overlay">
-      <h3>Portfolio Website</h3>
-      <p>Responsive full-stack portfolio site</p>
-      <a href="#" target="_blank" class="btn">GitHub</a>
+      <h3>D-Block Ballot</h3>
+      <p>A secure and transparent decentralized voting system built on blockchain 
+        technology, ensuring
+         tamper-proof elections and enhancing trust in the voting process.</p>
+      <a href="https://github.com/Muhammad-Talha-khan007/Decentralize-Voting-system-by-using-blockchain-Block-Ballot-" target="_blank" class="btn">GitHub</a>
       <a href="#" target="_blank" class="btn">Live Demo</a>
     </div>
   </div>
   <div class="project-card">
-    <img src="project3.png" alt="Blockchain DApp">
+    <img src="images/7a7b66a6-845d-4a75-a4df-6ab5100dc7c1.png" alt="Food-Delivery">
     <div class="overlay">
-      <h3>Blockchain DApp Prototype</h3>
-      <p>Smart contract on Ethereum testnet</p>
-      <a href="#" target="_blank" class="btn">GitHub</a>
+      <h3>Food-Delivery</h3>
+      <p>A fast and efficient food delivery platform that connects
+         customers with local restaurants,
+         streamlining orders and ensuring timely deliveries.</p>
+      <a href="https://github.com/Muhammad-Talha-khan007/Food-Delivery" target="_blank" class="btn">GitHub</a>
       <a href="#" target="_blank" class="btn">Live Demo</a>
     </div>
   </div>
   <div class="project-card">
-    <img src="project4.png" alt="Full-Stack Web Apps">
+    <img src="images/tourism.jfif" alt="Tourism-Management-System">
     <div class="overlay">
-      <h3>Full-Stack Web Apps</h3>
-      <p>CRUD applications with frontend & backend</p>
-      <a href="#" target="_blank" class="btn">GitHub</a>
+      <h3>Tourism-Management-System</h3>
+      <p>A comprehensive tourism management platform that simplifies
+         trip planning, bookings,
+         and itinerary management for travelers and service providers.</p>
+      <a href="https://github.com/Muhammad-Talha-khan007/Tourism-Management-System" target="_blank" class="btn">GitHub</a>
+      <a href="#" target="_blank" class="btn">Live Demo</a>
+    </div>
+  </div>
+  <div class="project-card">
+    <img src="images/Pharmacy-Management-System.jfif" alt="Pharmacy-Management-System">
+    <div class="overlay">
+      <h3>Pharmacy-Management-System</h3>
+      <p>A streamlined pharmacy management system that handles inventory, prescriptions,
+         and sales efficiently, ensuring accurate and timely service.</p>
+      <a href="https://github.com/Muhammad-Talha-khan007/Pharmacy-Management-System" target="_blank" class="btn">GitHub</a>
+      <a href="#" target="_blank" class="btn">Live Demo</a>
+    </div>
+  </div>
+  <div class="project-card">
+    <img src="images/Doodle-Jump-Master.jfif" alt="Doodle-Jump-Master">
+    <div class="overlay">
+      <h3>Doodle-Jump-Master</h3>
+      <p>A fun and engaging mobile game where players navigate obstacles, jump higher, and 
+        aim for top scores with intuitive controls and addictive gameplay.</p>
+      <a href="https://github.com/Muhammad-Talha-khan007/Doodle-Jump-Master" target="_blank" class="btn">GitHub</a>
+      <a href="#" target="_blank" class="btn">Live Demo</a>
+    </div>
+  </div>
+  <div class="project-card">
+    <img src="images/Ping-Pong.jfif" alt="Ping-Pong">
+    <div class="overlay">
+      <h3>Ping-Pong</h3>
+      <p>A classic and fast-paced ping-pong game with smooth controls, 
+        competitive gameplay, 
+        and engaging challenges for players of all levels.</p>
+      <a href="https://github.com/Muhammad-Talha-khan007/Ping-Pong-" target="_blank" class="btn">GitHub</a>
+      <a href="#" target="_blank" class="btn">Live Demo</a>
+    </div>
+  </div>
+  <div class="project-card">
+    <img src="images/Flappy-bird-Game.jfif" alt="Flappy-bird-Game">
+    <div class="overlay">
+      <h3>Flappy-bird-Game</h3>
+      <p>A simple yet addictive arcade game where players navigate a bird
+         through challenging obstacles, testing reflexes and precision.</p>
+      <a href="https://github.com/Muhammad-Talha-khan007/Flappy-bird-Game" target="_blank" class="btn">GitHub</a>
+      <a href="#" target="_blank" class="btn">Live Demo</a>
+    </div>
+  </div>
+  <div class="project-card">
+    <img src="images/hangry.jfif" alt="Hangry">
+    <div class="overlay">
+      <h3>Hangry</h3>
+      <p>A fun and fast-paced game where players manage challenges, score points, and
+         navigate obstacles to satisfy their hungry character.</p>
+      <a href="https://github.com/Muhammad-Talha-khan007/Hangry" target="_blank" class="btn">GitHub</a>
+      <a href="#" target="_blank" class="btn">Live Demo</a>
+    </div>
+  </div>
+  <div class="project-card">
+    <img src="images/fraud.jfif" alt="fraud-detection-system">
+    <div class="overlay">
+      <h3>Fraud-Detection-System</h3>
+      <p>A data-driven fraud detection system using SQL that analyzes transactions
+         to identify anomalies and prevent financial fraud efficiently.</p>
+      <a href="https://github.com/Muhammad-Talha-khan007/fraud-detection-system-in-sql" target="_blank" class="btn">GitHub</a>
+      <a href="#" target="_blank" class="btn">Live Demo</a>
+    </div>
+  </div>
+  <div class="project-card">
+    <img src="images/portfolio.jfif" alt="Talha-Portfolio">
+    <div class="overlay">
+      <h3>Talha-Portfolio</h3>
+      <p>A showcase of my projects and skills in web development, blockchain,
+         app development, and 
+        game design, highlighting my technical expertise and creativity.</p>
+      <a href="https://github.com/Muhammad-Talha-khan007/talha-portfolio" target="_blank" class="btn">GitHub</a>
+      <a href="#" target="_blank" class="btn">Live Demo</a>
+    </div>
+  </div>
+ 
+  <div class="project-card">
+    <img src="images/Traveling-Website.jfif" alt="Traveling-Website">
+    <div class="overlay">
+      <h3>Traveling-Website</h3>
+      <p>A modern travel website that helps users explore destinations, plan trips, and book travel experiences easily and efficiently.</p>
+      <a href="https://github.com/Muhammad-Talha-khan007/Traveling-Website" target="_blank" class="btn">GitHub</a>
       <a href="#" target="_blank" class="btn">Live Demo</a>
     </div>
   </div>
@@ -302,7 +503,7 @@ nav ul li { margin:1rem 0;}
     <h2>Contact Me</h2>    
          <div class="card">Email: <a href="mailto:https://niaziibro@gmail.com" target="_blank">niaziibro@gmail.com</a></div>
        <div class="card">Phone: 0309-6974397</div>
-       <div class="card">LinkedIn: <a href="https://linkedin.com/in/muhammad-talha-khan-56773431" class="btn" target="_blank"> My LinkedIn</a>
+       <div class="card">LinkedIn: <a href="https://https://www.linkedin.com/in/muhammad-talha-khan-56773431a/?trk=public-profile-join-page" class="btn" target="_blank"> My LinkedIn</a>
         </div>
         <div class="card">GitHub: <a href="https://github.com/Muhammad-Talha-khan007" class="btn" target="_blank">My GitHub</a></div>        
 </section>
